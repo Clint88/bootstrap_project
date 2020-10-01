@@ -18,8 +18,9 @@
             
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
+                    <li class="nav-item active">
+                        <!--boldens or makes the word about a whiter text color when the tab is clicked-->
+                        <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="explore.html">Explore</a>
@@ -28,65 +29,54 @@
                         <a class="nav-link" href="stats.html">Stats</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="your_rank.html">Rank</a>
+                        <a class="nav-link" href="your_rank.html">Rank</a>
                     </li>
-                    <!--boldens or makes the word contact a whiter text color when the tab is clicked-->
-                    <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                  <!--search box where the user can search up themselves or other people-->
+                <!--search box where the user can search up themselves or other people-->
                 <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search">
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
+    
         <!--Big dark grey box that says the following p and h1 elements-->
         <div class="jumbotron jumbotron-fluid bg-dark">
-            <div class="container" >
-                <h1 class="display-4"><p class="text-light bg-dark">Contact Us</p></h1>
-                <p class="lead"><p class="text-warning">If you have any questions or comments, please fill out this form.</p></p>
+            <div class="container">
+                <h1 class="display-4"><p class="text-light bg-dark">About Us</p></h1>
+                <p class="lead"><p class="text-warning">Learn about the creators of the site and the creators of Rocket League.</p></p>
             </div>
         </div>
 
-        <!--contact form that the user fills out if they have questions or comments-->
-        <div class="card w-50">
-            <div class="card-body">
-              <form>
-                <div class="row">
-                  <div class="col">
-                    <label for="firstName">First Name</label>
-                    <!--input box of where the user puts their first name-->
-                    <input type="text" class="form-control" id="firstName">
-                  </div>
+        <!--two cards of info that each take up 50% of the page-->
+        <div class="row">
+            <div class="col w-50">
+                <div class="card" style="width: 100%;">
+                    <!--sizes the image to fit in the card and centers it-->
+                    <img src="Images/bC.jpg" class="card-img-top" alt="Creators of this site" style="width: 30%; margin-left: auto; margin-right:auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Site Creators</h5>
+                        <!--info about me and clint as the creators of the site-->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem ducimus earum dolorem corrupti hic neque aspernatur beatae, repellendus doloremque, voluptatibus officiis architecto tenetur fuga illo sed maxime libero repellat?</p>
+                    </div>
                 </div>
-                <br/>
-                <div class="row">
-                  <div class="col">
-                    <label for="lastName">Last Name</label>
-                    <!--input box of where the user puts their last name-->
-                    <input type="text" class="form-control" id="lastName">
-                  </div>
+            </div>
+            <div class="col w-50">
+                <div class="card" style="width: 100%;">
+                    <!--sizes the image to fit in the card and centers it-->
+                    <img src="Images/rlCreators.jpeg" class="card-img-top" alt="Rocket League Creators" style="width: 60%; margin-left: auto; margin-right:auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Rocket League Creators</h5>
+                        <!--info about the rocket league creators-->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, temporibus vitae odit iste mollitia necessitatibus explicabo, ipsam alias molestiae dolorum odio provident voluptatem est, atque in doloribus eos cupiditate ducimus?</p>
+                    </div>
                 </div>
-                <br/>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email address</label>
-                  <!--input box of where the user puts their email-->
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Questions/Comments</label>
-                  <!--input box of where the user puts their concerns/comments-->
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              </form>
-              <!--sends us the form the user filled out-->
-              <a href="#" class="btn btn-primary">Submit</a>
             </div>
         </div>
 
-    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

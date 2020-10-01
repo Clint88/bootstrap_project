@@ -19,26 +19,30 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="explore.html">Explore</a>
                     </li>
-                    
                     <li class="nav-item">
                         <a class="nav-link" href="stats.html">Stats</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="your_rank.html">Rank</a>
-                  </li>
+                    </li>
+                    <!--boldens or makes the word contact a whiter text color when the tab is clicked-->
                     <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
+                  <!--search box where the user can search up themselves or other people-->
                 <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search">
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
-
+        <!--Big dark grey box that says the following p and h1 elements-->
         <div class="jumbotron jumbotron-fluid bg-dark">
             <div class="container" >
                 <h1 class="display-4"><p class="text-light bg-dark">Contact Us</p></h1>
@@ -46,12 +50,14 @@
             </div>
         </div>
 
+        <!--contact form that the user fills out if they have questions or comments-->
         <div class="card w-50">
             <div class="card-body">
               <form>
                 <div class="row">
                   <div class="col">
                     <label for="firstName">First Name</label>
+                    <!--input box of where the user puts their first name-->
                     <input type="text" class="form-control" id="firstName">
                   </div>
                 </div>
@@ -59,19 +65,23 @@
                 <div class="row">
                   <div class="col">
                     <label for="lastName">Last Name</label>
+                    <!--input box of where the user puts their last name-->
                     <input type="text" class="form-control" id="lastName">
                   </div>
                 </div>
                 <br/>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Email address</label>
+                  <!--input box of where the user puts their email-->
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Questions/Comments</label>
+                  <!--input box of where the user puts their concerns/comments-->
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
               </form>
+              <!--sends us the form the user filled out-->
               <a href="#" class="btn btn-primary">Submit</a>
             </div>
         </div>

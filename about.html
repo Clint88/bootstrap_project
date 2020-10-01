@@ -10,7 +10,6 @@
 </head>
 <body>
     <div class="sticky-top">
-        <!-- This will make the nav bar and the jumbotron stay at the top when you scroll -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -18,10 +17,10 @@
             <a class="navbar-brand" href="index.html">Rocket League</a>
             
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <!-- Everything after the first item in the navbar will be smaller and grayed out -->
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                    <li class="nav-item active">
+                        <!--boldens or makes the word about a whiter text color when the tab is clicked-->
+                        <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="explore.html">Explore</a>
@@ -32,32 +31,54 @@
                     <li class="nav-item">
                         <a class="nav-link" href="your_rank.html">Rank</a>
                     </li>
-                    
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
+                <!--search box where the user can search up themselves or other people-->
                 <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search">
-                <!-- the place holder is changed so players can type in their username -->
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
+    
+        <!--Big dark grey box that says the following p and h1 elements-->
         <div class="jumbotron jumbotron-fluid bg-dark">
-            <div class="container" >
-                <h1 class="display-4"><p class="text-light bg-dark">Rocket League</p></h1>
-                <p class="lead"><p class="text-warning">This is a place to search your own and other players stats.</p></p>
-                
+            <div class="container">
+                <h1 class="display-4"><p class="text-light bg-dark">About Us</p></h1>
+                <p class="lead"><p class="text-warning">Learn about the creators of the site and the creators of Rocket League.</p></p>
             </div>
         </div>
-    </div>
 
-    <img src="Images/car.png" alt="Car png" class="rounded mx-auto d-block" height="100%" width="100%">
+        <!--two cards of info that each take up 50% of the page-->
+        <div class="row">
+            <div class="col w-50">
+                <div class="card" style="width: 100%;">
+                    <!--sizes the image to fit in the card and centers it-->
+                    <img src="Images/bC.jpg" class="card-img-top" alt="Creators of this site" style="width: 30%; margin-left: auto; margin-right:auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Site Creators</h5>
+                        <!--info about me and clint as the creators of the site-->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem ducimus earum dolorem corrupti hic neque aspernatur beatae, repellendus doloremque, voluptatibus officiis architecto tenetur fuga illo sed maxime libero repellat?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-50">
+                <div class="card" style="width: 100%;">
+                    <!--sizes the image to fit in the card and centers it-->
+                    <img src="Images/rlCreators.jpeg" class="card-img-top" alt="Rocket League Creators" style="width: 60%; margin-left: auto; margin-right:auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Rocket League Creators</h5>
+                        <!--info about the rocket league creators-->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, temporibus vitae odit iste mollitia necessitatibus explicabo, ipsam alias molestiae dolorum odio provident voluptatem est, atque in doloribus eos cupiditate ducimus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <!-- These links will be used so bootstrap code will show -->
 </body>
 </html>

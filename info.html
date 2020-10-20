@@ -17,7 +17,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Rocket League</a>
+            <a class="navbar-brand" href="index.html">Fortnite</a>
         
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -28,13 +28,13 @@
                     <a class="nav-link" href="explore.html">Explore</span></a>
                 </li>
                 <!--boldens or makes the word stats a whiter text color when the tab is clicked-->
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="stats.html">Stats </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="your_rank.html">Rank</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="info.html">Info<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -43,8 +43,8 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <!--search box where the user can search up themselves or other people-->
-                <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search" id="searchBar">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" id="searchButton">Search</button>
             </form>
             </div>
         </nav>
@@ -52,8 +52,8 @@
         <div class="jumbotron jumbotron-fluid bg-dark">
             <div class="container">
                 <!--Username of the user's Rocket League account will be put into the h1 when looking at there own stats-->
-                <h1 class="display-4"><p class="text-light bg-dark">Player Info</p></h1>
-                <h2 class="lead"><p class="text-warning">Find out more about the player info</p></h2>
+                <h1 class="display-4"><p class="text-light bg-dark">Account Info</p></h1>
+                <h2 class="lead"><p class="text-warning">Find out more about the player account info</p></h2>
             </div>
         </div>
         <!--the user's stats will be put in the last table data element of each according category-->
@@ -68,65 +68,21 @@
         <table class="table">
             <tbody>
             <tr>
-                <th scope="row">Total Matches Played</th>
-                <td></td>
-                <td></td>
-                <td>200</td>
+                <th scope="row">Player Name</th>
+                <td class="playerName"></td>
+
             </tr>
             <tr>
-                <th scope="row">Win Rate</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
+                <th scope="row">Player ID</th>
+                <td class="playerID"></td>
+
             </tr>
             <tr>
-                <th scope="row">Wins</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
+                <th scope="row">Platform</th>
+                <td class="platform"></td>
+
             </tr>
-            <tr>
-                <th scope="row">MVPS</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <th scope="row">Goals</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <th scope="row">Aerial Goals</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <th scope="row">Backward Goals</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <th scope="row">Bicycle Goals</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <th scope="row">Long Goals</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <th scope="row">Overtime Goals</th>
-                <td></td>
-                <td></td>
-                <td>60%</td>
-            </tr>
+          
             </tbody>
         </table>
     <!--Javascript links from Bootstrap-->

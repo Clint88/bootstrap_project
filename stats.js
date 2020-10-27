@@ -9,9 +9,9 @@ xhr.addEventListener("readystatechange", function () {
         const info = JSON.parse(this.responseText);
         console.log(info);
 
-        const getBtn = document.getElementById("get-btn");
-        getBtn.onclick = function(){
-            const userInput = document.getElementById("searchBar").value;
+        const searchBtn = document.getElementById("searchBtn");
+        searchBtn.onclick = function(){
+            const userInput = document.getElementById("search").value;
 
             document.querySelector(".pokeN").innerHTML = info[userInput].pokemon_name;
             document.querySelector(".form").innerHTML = info[userInput].form;

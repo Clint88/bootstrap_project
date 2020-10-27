@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Practice</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="xhr.js" defer></script>
+    <script src="xhrInfo.js" defer></script>
 
 </head>
 <body>
@@ -56,6 +56,13 @@
                 <h1 class="display-4"><p class="text-light bg-dark">Account Info</p></h1>
                 <h2 class="lead"><p class="text-warning">Find out more about the player account info</p></h2>
             </div>
+        </div>
+        <div class="card text-center bg-secondary">
+            <!-- creates another search bar to look for your summoner stats on the page -->
+                <div class="card-body">
+                    <input id="search" class="form-control mr-sm-2" type="text" placeholder="Search Pokemon (enter number 0-1163)">
+                    <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </div>
         </div>
         <!--the user's stats will be put in the last table data element of each according category-->
         <div class="container">

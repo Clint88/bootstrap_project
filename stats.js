@@ -9,10 +9,14 @@ xhr.addEventListener("readystatechange", function () {
         const info = JSON.parse(this.responseText);
         console.log(info);
 
-        const getBtn = document.getElementById("get-btn");
-        getBtn.onclick = function(){
-            const userInput = document.getElementById("searchBar").value;
+        //creates a variable for the search button
+        const searchBtn = document.getElementById("searchBtn");
+        //function that inputs the info of the certain pokemon the user searches when they click the search button
+        searchBtn.onclick = function(){
+            //variable for what the user puts into the search bar
+            const userInput = document.getElementById("search").value;
 
+            //areas of where each specific info goes into
             document.querySelector(".pokeN").innerHTML = info[userInput].pokemon_name;
             document.querySelector(".form").innerHTML = info[userInput].form;
             document.querySelector(".id").innerHTML = info[userInput].pokemon_id;

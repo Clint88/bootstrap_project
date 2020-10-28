@@ -44,8 +44,8 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <!--search box where the user can search up themselves or other people-->
-                <input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search">
-                <button id="get-btn" class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
             </form>
             </div>
         </nav>
@@ -53,8 +53,16 @@
         <div class="jumbotron jumbotron-fluid bg-dark">
             <div class="container">
                 <!--Username of the user's Rocket League account will be put into the h1 when looking at there own stats-->
-                <h1 class="display-4"><p class="text-light bg-dark">Player Name</p></h1>
-                <h2 class="lead"><p class="text-warning">STATS</p></h2>
+                <h1 class="display-4"><p class="text-light bg-dark">Search Stats Here</p></h1>
+
+                <!--Search Bar-->
+                <div class="card text-center bg-dark">
+                    <!-- creates another search bar to look for your summoner stats on the page -->
+                          <div class="card-body">
+                              <input id="search" class="form-control mr-sm-2" type="text" placeholder="Search Players (enter number 0-1163)">
+                              <button id="searchBtn" class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                          </div>
+                  </div>
             </div>
         </div>
         <!--the user's stats will be put in the last table data element of each according category-->
@@ -107,7 +115,7 @@
             </tbody>
         </table>
     <!--Javascript links from Bootstrap-->
-    <script src="xhr.js " ></script>
+    <script src="stats.js" ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

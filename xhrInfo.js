@@ -16,7 +16,7 @@ xhr.addEventListener("readystatechange", function () {
             document.querySelector('.pokeName').innerHTML = info[userInput].pokemon_name;
             document.querySelector('.pokeNum').innerHTML = info[userInput].pokemon_id;
             document.querySelector('.form').innerHTML = info[userInput].form;
-            // once the userInput is found the data will look for what number they typed and find the info on the pokemon
+            // once the userInput is found the data will look for what number they typed and find the info on the pokemo
         }
 	}
 });

@@ -9,10 +9,14 @@ xhr.addEventListener("readystatechange", function () {
         const info = JSON.parse(this.responseText);
         console.log(info);
 
+        //variables for the different buttons
         const grassBtn = document.getElementById("grass");
         const fireBtn = document.getElementById("fire");
         const waterBtn = document.getElementById("water");
         const bestBtn = document.getElementById("best");
+
+        //when each of these buttons are clicked they send their own request to access their own specific info displayed on the page.
+        //ex: when the grass button is clicked, the top grass pokemon shows up
         grassBtn.onclick = function(){
             document.querySelector("#pokeName").innerHTML = info[6].pokemon_name;
             document.querySelector("#pokeNumber").innerHTML = info[6].pokemon_id;
